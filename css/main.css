@@ -208,6 +208,7 @@ html, body,
 	line-height: 36px;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
+<<<<<<< Updated upstream
 }
 
 .qq-thank-you {
@@ -262,3 +263,97 @@ html, body,
 .qq-restart:hover {
 	opacity: 0.5;
 }
+=======
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+/* Breakpoint 4 X Large */
+
+
+.qq-quote-area {
+    background: transparent;
+    font-size: 20px;
+    line-height: 28px;
+    width: 80%;
+    float: initial;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: georgia;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    height: 21vh;
+    top: 0vh;
+    text-align: center;
+}
+
+#quotation {
+    position: fixed;
+    top: 16vh;
+    font-size: 60px;
+    left: 49%;
+    font-family: georgia;
+    font-style: italic;
+}
+
+#socialshare {
+    display: none;
+}
+
+#socialshare2 {
+    display: none;
+}
+
+.qq-player-asset {
+    height: 100%;
+    overflow: visible;
+    transform: scale(0.6);
+}
+
+.qq-player-asset {
+
+    transform: scale(0.6);
+}
+
+.qq-message-area {
+    font-size: 87px;
+}
+
+.qq-player-button {
+    left: -22px;
+}
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+/* Breakpoint 5 XX Large */
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1550px) {
+/* Breakpoint 6 */
+}
+
+@media only screen and (min-width: 1551px) and (max-width: 1920px) {
+/* Breakpoint 7 */
+}
+
+@media only screen and (min-width: 1921px) {
+/* Breakpoint 8 */
+}
+
+
+
+
+
+>>>>>>> Stashed changes
