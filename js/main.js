@@ -220,6 +220,7 @@ var quiz_quote = function() {
 				elements.quote_area.hide();
 				elements.button_area.hide();
 				elements.message_area.hide();
+				$('#quotation').hide();
 				
 				// build an end slate
 				var end_slate = $("<div />", {
@@ -299,6 +300,7 @@ var quiz_quote = function() {
 						build_players();
 						
 						// show elements again
+						$('#quotation').show();
 						elements.message_area.text('');
 						elements.quote_area.show();
 						elements.button_area.show();
