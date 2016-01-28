@@ -6,7 +6,7 @@ var quiz_quote = function() {
 	var quiz_data = null;
 	
 	// required questions
-	var required_questions = 10;
+	var required_questions = 1;
 	
 	// app state variables
 		// the order for this game
@@ -229,7 +229,13 @@ var quiz_quote = function() {
 					// thank you message
 					var thank_you_message = $("<div />", {
 						"class" : "qq-thank-you",
-						"text" : "Thanks for playing. You scored " + current_score  + " point" + (current_score===1 ? "" : "s")
+						"text" : "Thanks for playing."
+					}).appendTo(end_slate); 
+					
+					// thank you message
+					var score_message = $("<div />", {
+						"class" : "qq-thank-you",
+						"text" : "You scored " + current_score  + " point" + (current_score===1 ? "" : "s")
 					}).appendTo(end_slate); 
 					
 					
@@ -246,14 +252,14 @@ var quiz_quote = function() {
 					
 					// social message
 					var social_icons = $("<div />", {
-						"class" : "qq-social-message"
+						"class" : "qq-social-icons"
 						
 					}).appendTo(end_slate); 
 				
 						// var facebook
 						var facebook=  $("<div />", {
-							"class" : "qq-social-icon facebook",
-							"text" : "Post to Facebook"
+							"class" : "qq-social-icon qq-social-icon-facebook",
+							"text" : "Facebook"
 						}).appendTo(social_icons);
 							
 							facebook.on('click', function(){
@@ -266,7 +272,7 @@ var quiz_quote = function() {
 							});
 							
 						var twitter=  $("<a />", {
-							"class" : "qq-social-icon twitter",
+							"class" : "qq-social-icon qq-social-icon-twitter ",
 							"text" : "Tweet",
 							"target" : "blank",
 							"href" : "https://twitter.com/intent/tweet?url=http://kanyeortrump.com&text=" + social_message_score + "&hashtags=KanyeOrTrump"+ "&via=KanyeOrTrump"
