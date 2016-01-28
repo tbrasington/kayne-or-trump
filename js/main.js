@@ -227,6 +227,59 @@ var quiz_quote = function() {
 						"class" : "qq-thank-you",
 						"text" : "Thanks for playing. You scored " + current_score  + " points"
 					}).appendTo(end_slate); 
+					
+					
+					
+					// social message
+					var social_message = $("<div />", {
+						"class" : "qq-social-message",
+						"text" : "Share your score on "
+						
+					}).appendTo(end_slate); 
+					
+					// social message
+					var social_message_score = "I scored "+current_score+" on Kayne vs Trump. Why don't you try! ";
+					
+					// social message
+					var social_icons = $("<div />", {
+						"class" : "qq-social-message"
+						
+					}).appendTo(end_slate); 
+				
+						// var facebook
+						var facebook=  $("<div />", {
+							"class" : "qq-social-icon facebook",
+							"text" : "Post to Facebook"
+						}).appendTo(social_icons);
+							
+							facebook.on('click', function(){
+								
+								FB.ui({
+								  method: 'share',
+								  href: 'https://developers.facebook.com/docs/',
+								}, function(response){});
+
+/*
+							FB.ui({
+								  method: 'feed',
+								  link: 'http://kanyeortrump.com',
+								  caption: social_message_score,
+								}, function(response){
+								});
+*/
+
+							});
+							
+						var twitter=  $("<a />", {
+							"class" : "qq-social-icon twitter",
+							"text" : "Tweet",
+							"target" : "blank",
+							"href" : "https://twitter.com/intent/tweet?url=http://kanyeortrump.com&text=" + social_message_score + "&hashtags=KanyeOrTrump"+ "&via=KanyeOrTrump"
+						}).appendTo(social_icons);
+							
+							
+				
+					
 					// restart message
 					var restart_message = $("<div />", {
 						"class" : "qq-restart",
@@ -252,11 +305,6 @@ var quiz_quote = function() {
 					})
 					.appendTo(end_slate); 
 					
-					// social message
-					var social_message = $("<div />", {
-						"class" : "qq-social-message"
-					}).appendTo(end_slate); 
-				
 			} else {
 				// show the next quote
 				game_on();
