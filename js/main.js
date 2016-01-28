@@ -229,7 +229,7 @@ var quiz_quote = function() {
 					// thank you message
 					var thank_you_message = $("<div />", {
 						"class" : "qq-thank-you",
-						"text" : "Thanks for playing. You scored " + current_score  + " points"
+						"text" : "Thanks for playing. You scored " + current_score  + " point" + (current_score===1 ? "" : "s")
 					}).appendTo(end_slate); 
 					
 					
