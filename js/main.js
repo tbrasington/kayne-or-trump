@@ -71,7 +71,8 @@ var quiz_quote = function() {
 		
 		// where the correct/wrong and next message appears
 		elements.message_area = $("<div />", {
-			"class" : "qq-message-area"
+			"class" : "qq-message-area",
+			"text" : "Or"
 		}).appendTo(elements.container);
 		
 	}
@@ -109,26 +110,43 @@ var quiz_quote = function() {
 				// they can't keep checking
 				if(proceed===false) {
 					// message template
-					var message = '';
+					var message = '',class_name='';
 					// its the right player
 					if(player.id === shuffled_quote_order[current_position].player) {
 						
-						message = "Success ! " + get_player_name(shuffled_quote_order[current_position].player) + " said that";
-					
+						message = "YES!";
+						class_name = "positive-message";
+						$(this).find('.visual-tick').addClass('yes-tick');
+						 
 					} else {
 						
 						// its the wrong player
-						message =  "Fail ! " + get_player_name(shuffled_quote_order[current_position].player) + " said that";
+						message =  "NO!";
+						class_name = "negative-message";
 						
 						
+						$('.visual-tick').addClass('yes-tick');
+						$(this).find('.visual-tick').removeClass('yes-tick');
+
 					}
+					
+					$('.visual-tick').show();
+					
+					// update message
+					elements.message_area.addClass(class_name).text(message);
+					
+					// hide names
+					$('.qq-player-label').addClass('hide-text');
 					
 					// allow the user to proceed to the next question
 					proceed = true;
-					elements.message_area.addClass('show-message').text(message);
 					
 					setTimeout(function(){
-						elements.message_area.removeClass('show-message')
+						elements.message_area.removeClass('positive-message').removeClass('negative-message');
+						$('.qq-player-label').removeClass('hide-text');
+
+						$('.visual-tick').removeClass('yes-tick').hide();
+
 						attempt_next_question();
 					}, 700);
 				}
@@ -150,7 +168,12 @@ var quiz_quote = function() {
 					"class" : "qq-player-label",
 					"text" : player.label
 				}).appendTo(button_container);
-			
+				
+				
+				// var tick 
+				var tick = $("<div />", {
+					"class" : "visual-tick "
+				}).appendTo(button_container);
 		});
 		
 		// shuffle the order
@@ -167,7 +190,7 @@ var quiz_quote = function() {
 		
 		// stop the user from skipping
 		proceed = false;
-		elements.message_area.text('');
+		elements.message_area.text('Or');
 		
 		// update the quote area with the current quote
 		elements.quote_area.text(shuffled_quote_order[current_position].quote);
