@@ -27,7 +27,6 @@
 html, body,
 .qq-container {
 	min-height: 100%;
-	overflow: hidden;
 }
 
 .qq-container {
