@@ -14,7 +14,9 @@ var quiz_quote = function() {
 		var total_quotes;
 		// the current state on whether the user can go to the next question
 		var proceed = false;
-	
+		// your current score
+		var current_score = 0;
+		
 	// local scope for element access
 	var elements = {
 		container : null,
@@ -117,6 +119,10 @@ var quiz_quote = function() {
 						message = "YES!";
 						class_name = "positive-message";
 						$(this).find('.visual-tick').addClass('yes-tick');
+						
+						
+						// increase the score 
+						current_score++;
 						 
 					} else {
 						
@@ -219,7 +225,7 @@ var quiz_quote = function() {
 					// thank you message
 					var thank_you_message = $("<div />", {
 						"class" : "qq-thank-you",
-						"text" : "Thanks for playing."
+						"text" : "Thanks for playing. You scored " + current_score  + " points"
 					}).appendTo(end_slate); 
 					// restart message
 					var restart_message = $("<div />", {
@@ -235,6 +241,7 @@ var quiz_quote = function() {
 						shuffled_quote_order = null;
 						total_quotes = 0;
 						current_position = 0;
+						current_score = 0;
 						build_players();
 						
 						// show elements again
