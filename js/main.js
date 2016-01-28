@@ -6,7 +6,7 @@ var quiz_quote = function() {
 	var quiz_data = null;
 	
 	// required questions
-	var required_questions = 10;
+	var required_questions = 1;
 	
 	// app state variables
 		// the order for this game

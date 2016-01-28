@@ -182,3 +182,18 @@ transform: scale(1.1);
 }
 
 #google-ad {width: 49%;background-color: transparent;top: 80vh;position: relative;margin-left: auto;margin-right: auto;}
+
+
+.qq-end-slate {
+	width: 100%;
+	max-width: 320px;
+	height: 200px;
+	left:50%;
+	top:50%;
+	margin-top:-100px;
+	margin-left:-160px;
+	background:#fff;
+	color: #cc0000;
+	text-align: center;
+	position: absolute;
+}
