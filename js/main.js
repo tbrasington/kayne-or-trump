@@ -238,7 +238,7 @@ var quiz_quote = function() {
 					}).appendTo(end_slate); 
 					
 					// social message
-					var social_message_score = "I scored "+current_score+" on Kayne vs Trump. Why don't you try! ";
+					var social_message_score = "I scored "+current_score+" on Kayne vs Trump. Why don't you try!'";
 					
 					// social message
 					var social_icons = $("<div />", {
@@ -253,21 +253,12 @@ var quiz_quote = function() {
 						}).appendTo(social_icons);
 							
 							facebook.on('click', function(){
-								
 								FB.ui({
-								  method: 'share',
-								  href: 'https://developers.facebook.com/docs/',
-								}, function(response){});
-
-/*
-							FB.ui({
 								  method: 'feed',
-								  link: 'http://kanyeortrump.com',
-								  caption: social_message_score,
-								}, function(response){
+								  	link: 'http://kanyeortrump.com',
+								  	caption: social_message_score,
+									}, function(response){
 								});
-*/
-
 							});
 							
 						var twitter=  $("<a />", {
