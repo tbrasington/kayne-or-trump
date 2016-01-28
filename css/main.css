@@ -20,6 +20,11 @@
 	height: auto;
 }
 
+.restart {
+
+}
+
+
 .qq-quote-area {
 	background: transparent;
 	font-size: 1.7em;
@@ -74,29 +79,18 @@ transform: scale(1.1);
 		
 
 .qq-message-area {
-	background-color: #020202;
+	background-color: transparent;
 	position: absolute;
-	width: 50%;
 	padding: 0px;
 	text-align: center;
 	z-index: 2;
-	top: 50%;
+	top: 67%;
 	left:50%;
 	transform: translate3d(-50%, -50%, 0) scale(0.5,0.5);
 	transition: all 0.3s ease-in-out;
-	height: 50vh;
 	line-height: 50vh;
-	font-size: 30px;
-	border: 5px solid;
-	font-family: helvetica;
-	font-weight: 100;
-	letter-spacing: 0.3px;
-	text-transform: uppercase;
-	background: url(asset/bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	font-size: 150px;
+	font-family: georgia;
 }
 
 .positive-message {
