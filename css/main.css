@@ -23,33 +23,27 @@
 .restart {
 
 }
-
+ 
 html, body,
 .qq-container {
 	min-height: 100%;
 }
-
-.qq-container {
-	position: absolute;
-	top:0;
-}
+ 
 
 .qq-quote-area {
 	background: transparent;
+	font-size: 1.7em;
+	line-height: 36px;
 	width: 41%;
 	float: initial;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: georgia;
 	font-weight: 100;
-	font-size: 1.7em;
-	line-height: 36px;
 	-webkit-font-smoothing: antialiased;
 	height: 21vh;
 	top: 0vh;
 	text-align: center;
-	
-	margin-top:150px;
 }
 
 .qq-button-area {
@@ -74,18 +68,17 @@ html, body,
 			overflow: visible;
 		}
 		.qq-player-asset img {
-			transition: all 0.3s ease-in-out;
-			width: auto;
-			height: 100%;
-			transform: scale(0.9);
-		}
+	transition: all 0.3s ease-in-out;
+	width: auto;
+	height: 100%;
+	transform: scale(0.9);
+	}
 
 		.qq-player-asset img:hover {
-			transition: all .2s ease-in-out;
-			transform: scale(1.1);
-		}
-		
-		.qq-player-label.hide-text {
+transition: all .2s ease-in-out;
+transform: scale(1.1);
+}
+	.qq-player-label.hide-text {
 			font-size: 0;
 		}
 		
@@ -192,72 +185,18 @@ html, body,
 
 
 .qq-end-slate {
-	position: absolute;
 	width: 100%;
 	max-width: 320px;
 	height: 200px;
 	left:50%;
 	top:50%;
-	transform: translateX(-50%) translateY(-50%);
-	
-	
-	font-family: georgia;
-	font-weight: 100;
-	font-size: 1.7em;
-	line-height: 36px;
-	-webkit-font-smoothing: antialiased;
+	margin-top:-100px;
+	margin-left:-160px;
+	background:#fff;
+	color: #cc0000;
 	text-align: center;
-}
-
-.qq-thank-you {
-	
-}
-
-.qq-social-message {
-	padding: 20px 0 0 0;
-}
-
-.qq-social-icons {
-	
-	padding: 20px 0 0 0;
-	position: relative;
-	float: left;
-	width: 100%;
-}
-
-.qq-social-icon {
-	width: calc(50% - 10px);
-
-	border:2px solid #fff;
-	border-radius: 3px;
-	text-align: center;
-	float: left;
-	margin-right:10px;
-	
-	font-size: 18px;
-	
-	
-	line-height: 44px;
-	height: 44px;
-	
-	cursor: pointer;
-}
-
-.qq-social-icon:hover {
-	opacity: 0.5;
+	position: absolute;
 }
 
 
-.qq-social-icon-twitter {
-	margin: 0
-}
 
-.qq-restart {
-	padding: 20px 0 0 0;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.qq-restart:hover {
-	opacity: 0.5;
-}
