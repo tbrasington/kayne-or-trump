@@ -5,6 +5,9 @@ var quiz_quote = function() {
 	// the provided data put into local scope
 	var quiz_data = null;
 	
+	// required questions
+	var required_questions = 10;
+	
 	// app state variables
 		// the order for this game
 		var shuffled_quote_order;
@@ -184,6 +187,7 @@ var quiz_quote = function() {
 		
 		// shuffle the order
 		shuffled_quote_order = _.shuffle(new_quiz_data);
+		shuffled_quote_order= shuffled_quote_order.slice(0,required_questions);
 		total_quotes = _.size(shuffled_quote_order);
 		
 		// invoke the current message
