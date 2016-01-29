@@ -121,6 +121,11 @@ body {
     display: none;
 }
 
+#google-ad-mobile {
+    display: initial;
+    background-color: #ffffff;
+}
+
 #socialshare3 {
     font-family: georgia;
     letter-spacing: 0px;
