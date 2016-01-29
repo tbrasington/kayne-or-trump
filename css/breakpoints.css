@@ -32,15 +32,15 @@ body {
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
     height: 21vh;
-    top: 0vh;
+    top: -3vh;
     text-align: center;
 }
 
 #quotation {
     position: fixed;
-    top: 16vh;
+    top: 12vh;
     font-size: 60px;
-    left: 49%;
+    left: 46%;
     font-family: georgia;
     font-style: italic;
 }
@@ -155,6 +155,10 @@ body {
     top: -4vh;
     z-index: 3;
     left: 10px;
+}
+
+.qq-end-slate {
+    top: 36%;
 }
 
 
