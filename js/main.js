@@ -227,6 +227,15 @@ var quiz_quote = function() {
 					"class" : "qq-end-slate"
 				}).appendTo(elements.container);
 				
+
+
+
+					// thank you message
+					var thank_you_message = $("<div />", {
+						"class" : "qq-thank-you-hash",
+						"text" : "#KanyeOrTrump"
+					}).appendTo(end_slate); 
+
 					// thank you message
 					var thank_you_message = $("<div />", {
 						"class" : "qq-thank-you",
