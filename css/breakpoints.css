@@ -1,0 +1,179 @@
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+/* Breakpoint 4 X Large */
+
+body {
+    margin: 0;
+    background-color: #cccccc;
+    color: #ffffff;
+    background: url(asset/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    border: 0px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.qq-quote-area {
+    background: transparent;
+    font-size: 15px;
+    line-height: 28px;
+    width: 80%;
+    float: initial;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: georgia;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    height: 21vh;
+    top: 0vh;
+    text-align: center;
+}
+
+#quotation {
+    position: fixed;
+    top: 16vh;
+    font-size: 60px;
+    left: 49%;
+    font-family: georgia;
+    font-style: italic;
+}
+
+#socialshare {
+    display: none;
+}
+
+#socialshare2 {
+    display: none;
+}
+
+.qq-player-asset {
+    height: 100%;
+    overflow: visible;
+    transform: scale(0.6);
+}
+
+.qq-player-asset {
+
+    transform: scale(0.6);
+}
+
+.qq-message-area {
+    font-size: 67px;
+    top: 64%;
+    left: 49%;
+}
+
+.positive-message {
+    color: #7ED321;
+        font-size: 57px;
+
+}
+.negative-message {
+    color: #FF0000;
+        font-size: 57px;
+
+}
+
+.qq-player-button {
+    left: -29px;
+}
+
+.qq-player-label {
+    font-size: 21px;
+    left: 20px;
+    top: -63px;
+}
+
+.qq-player-asset img:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(0.9);
+        }
+
+        .visual-tick {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../asset/no-tick.png);
+    bottom: -70px;
+    left: 59%;
+    transform: translateX(-50%);
+    display: none;
+    top: 120px;
+}
+
+#google-ad {
+    width: 100%;
+    background-color: #fff;
+    top: 79vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.6);
+}
+
+#socialshare3 {
+    font-family: georgia;
+    letter-spacing: 0px;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 100;
+    position: fixed;
+    top: 79vh;
+    opacity: 0.5;
+    z-index: 4;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+}
+
+#socialshare4 {
+    font-family: georgia;
+    letter-spacing: 0px;
+    font-size: 11px;
+    font-weight: 100;
+    top: 83vh;
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+    text-align: center;
+    left: 0px;
+    float: none;
+}
+
+.qq-button-area {
+    height: 40vh;
+    overflow: visible;
+    top: -4vh;
+    z-index: 3;
+    left: 10px;
+}
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+/* Breakpoint 5 XX Large */
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1550px) {
+/* Breakpoint 6 */
+}
+
+@media only screen and (min-width: 1551px) and (max-width: 1920px) {
+/* Breakpoint 7 */
+}
+
+@media only screen and (min-width: 1921px) {
+/* Breakpoint 8 */
+}
+
+
